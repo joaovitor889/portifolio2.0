@@ -1,16 +1,21 @@
 <template>
   <div>
-    <h1>Projeto novo portifolio</h1>
+    <Navbar/>
   </div>
 </template>
 
 <script>
-
+import Navbar from './components/NavBar';
 
 export default {
   name: 'App',
 
+  components:{
+    Navbar
+  }
+
 }
+
 </script>
 
 <style>
@@ -20,6 +25,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0;
+}
+Navbar{
+  margin: 0;
 }
 </style>
